@@ -22,15 +22,15 @@ You can also create your own folder inside the images/ directory but remember to
 For example, changing the initial values to ```edited.jpg``` and ```unedited.jpg``` would change the file to:
 
 ```html
-  	<div id="sliderbox" class="img-container">
-      <!-- Right Image -->
-  	  <img class="fitcenter" id="img_right" src="images/imagery/edited.jpg">
-  	  <!-- Left image -->
-  	  <div class="imgholder img-top">
-  	    <img class="fitcenter" id="img_left" src="images/imagery/unedited.jpg">
-  	  </div>
-  	  <span class="handle"></span>
-  	</div>
+    <div id="sliderbox" class="img-container">
+        <!-- Right Image -->
+        <img class="fitcenter" id="img_right" src="images/imagery/edited.jpg">
+        <!-- Left image -->
+        <div class="imgholder img-top">
+            <img class="fitcenter" id="img_left" src="images/imagery/unedited.jpg">
+        </div>
+        <span class="handle"></span>
+    </div>
 ```
 
 3. All that is left at this point is to point the left and right buttons to your images. You do this by:
@@ -39,12 +39,12 @@ For example, changing the initial values to ```edited.jpg``` and ```unedited.jpg
 
     b. Inside this filenames, you shall put all the images you want in the slider and their button names. For example, if you have 4 images edited.jpg, unedited.jpg, filtered.jpg and unfiltered. Your filename variable should be changed to:
     ```javascript
-        var filenames = [
-            ['edited', 'images/imagery/edited.jpg'],
-            ['filtered', 'images/imagery/filtered.jpg'],
-            ['un-edited', 'images/imagery/unedited.jpg'],
-            ['un-filtered', 'images/imagery/unfiltered.jpg']
-        ]
+    var filenames = [
+        ['edited', 'images/imagery/edited.jpg'],
+        ['filtered', 'images/imagery/filtered.jpg'],
+        ['un-edited', 'images/imagery/unedited.jpg'],
+        ['un-filtered', 'images/imagery/unfiltered.jpg']
+    ]
     ```
 
     Note: For each item in the filenames array, the first item is the name that will appear on the button, eg ```'edited'``` and the second item is the path to the image, eg ```'images/imagery/edited.jpg'```.
