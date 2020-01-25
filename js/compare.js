@@ -2,27 +2,21 @@
 
 IMAGE COMPARISON SLIDER.
 
-Used to compare 2 images by allowing a sliding/swiping action of one image over the second image. In addition, resizes the image container to fit the available window space without altering the image aspect ratio. [Yet to be implemented]
+Used to compare 2 images by allowing a sliding/swiping action of one image over the second image. 
+In addition, this version of the slider comes with buttons that allow one to select from a list of multiple images. 
 
 Last update: 19th January.
 
 */
 
+
 var filenames = [
-		['Streets', 'images/imagery/OSTM.jpg'], 
-		['Topo', 'images/imagery/TOPO.jpg'],
-		['2017', 'images/imagery/2017.jpg'],
-		['2007', 'images/imagery/2007.jpg'], 
-		['1995', 'images/imagery/1995.jpg']
-	]
-
-// var filetype = 'jpg'
-// var displayImageryTabs = [];
-// var selectionRight;
-// var selectionLeft;
-
-
-
+	['1995', 'images/imagery/B1995_5k.jpg'],
+	['2007', 'images/imagery/B2007_5k.jpg'],
+	['2017', 'images/imagery/B2017_5k.jpg'],
+	['Topo', 'images/imagery/BTOPO_5k.jpg'],
+	['Streets', 'images/imagery/BOSTM_5k.jpg']
+]
 
 // Window onload 
 window.onload = function () {
@@ -36,7 +30,6 @@ window.onload = function () {
 		if (child.classList.contains('img-top')) {
 			child.querySelector('img').style.width = width;
 		}
-
 		// Bind the dragging event to resizing.
 		drag(curr.querySelector('.handle'), curr.querySelector('.img-top'), curr);
 	});
@@ -54,7 +47,6 @@ window.addEventListener('resize', function() {
 	});
 
 });
-
 
 
 function createImageryTabs(fileArray, leftImageId, rightImageId) {
@@ -212,12 +204,4 @@ function drag(dragHandle, resizeElement, container) {
 	}
 
 }
-
-
-
-
-
-
-
-
 
