@@ -20,8 +20,7 @@ You can also create your own folder inside the images/ directory but remember to
 
 2. Open the compare.html file and locate the div with id='sliderbox'. Change the src attributes for the 'img-right' and 'img-left' to the path of the default images you would like to have as the initial slider images.
 
-```
-    <!-- Image slider -->
+```html
   	<div id="sliderbox" class="img-container">
   		<!-- Right Image -->
   		<img class="fitcenter" id="img_right" src="images/imagery/B2017_5k.jpg">
@@ -34,28 +33,18 @@ You can also create your own folder inside the images/ directory but remember to
 ```
 
 3. All that is left at this point is to point the left and right buttons to your images. You do this by:
-    a. Open the compare.js file and locate the line with, var filenames below:
+    a. Open the compare.js file and locate the line with, ```var filenames```.
 
-        ```
-            var filenames = [
-                ['1995', 'images/imagery/B1995_5k.jpg'],
-                ['2007', 'images/imagery/B2007_5k.jpg'],
-                ['2017', 'images/imagery/B2017_5k.jpg'],
-                ['Topo', 'images/imagery/BTOPO_5k.jpg'],
-                ['Streets', 'images/imagery/BOSTM_5k.jpg']
-            ]
-        ```
+    b. Inside this filenames, you shall put all the images you want in the slider and their button names. For example, if you have 4 images edited.jpg, unedited.jpg, filtered.jpg and unfiltered. Your filename variable should be changed to:
+    ```javascript
+        var filenames = [
+            ['edited', 'images/imagery/edited.jpg'],
+            ['filtered', 'images/imagery/filtered.jpg'],
+            ['un-edited', 'images/imagery/unedited.jpg'],
+            ['un-filtered', 'images/imagery/unfiltered.jpg']
+        ]
+    ```
 
-    b. Inside this filenames, you shall put all the images you want in the slider and their button names. For example, if you have 4 images edited.jpg, unedited.jpg, filtered.jpg and unfiltered. Your filename variable shoudl be changed to:
-        ```
-            var filenames = [
-                ['edited', 'images/imagery/edited.jpg'],
-                ['filtered', 'images/imagery/filtered.jpg'],
-                ['un-edited', 'images/imagery/unedited.jpg']
-                ['un-filtered', 'images/imagery/unfiltered.jpg']
-            ]
-        ```
-        
     Note: For each item in the filenames array, the first item is the name that will appear on the button, eg 'edited' and the second item is the path to the image, eg 'images/imagery/edited.jpg'.
 
 4. Change the title of the slider in the compare.html, or remove it all together if not needed. 
