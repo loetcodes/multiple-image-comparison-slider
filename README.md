@@ -4,10 +4,11 @@ Compare images with a multiple image slider.
 With this slider, you can compare multiple images all in one slider window. This is a slider that allows users to select and compare multiple images using side panel buttons.
 
 
-# Features include:
+# Features
 
-    1. Left and Right buttons to actively change the left and right images on the slider.
-    2. The slider is optimized to fit the screen width and resizes with the browser window.
+1. Left and Right buttons to actively change the left and right images on the slider.
+   
+2. The slider is optimized to fit the screen width and resizes with the browser window.
 
 
 # Demo
