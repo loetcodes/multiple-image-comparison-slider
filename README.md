@@ -13,6 +13,8 @@ With this slider, you can compare multiple images all in one slider window. This
 
 # Demo
 
+Below is demo gif of the image slider.
+
 ![](images/demo/imagery_demo.gif)
 
 
