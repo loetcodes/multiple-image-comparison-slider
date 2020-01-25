@@ -3,7 +3,7 @@
 IMAGE COMPARISON SLIDER.
 
 Used to compare 2 images by allowing a sliding/swiping action of one image over the second image. 
-In addition, this version of the slider comes with buttons that allow one to select from a list of multiple images. 
+In addition, this version of the slider comes with buttons that allow one to change the left and right images based on the buttons created from available filenames. 
 
 Last update: 19th January.
 
