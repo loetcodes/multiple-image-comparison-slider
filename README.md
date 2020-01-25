@@ -18,22 +18,24 @@ Compare images with a multiple image slider. With this slider, you can compare m
 1. Replace the images in the images/imagery directory with your images.
 You can also create your own folder inside the images/ directory but remember to change the paths in the compare.js and compare.html files.
 
-2. Open the compare.html file and locate the div with id='sliderbox'. Change the src attributes for the 'img-right' and 'img-left' to the path of the default images you would like to have as the initial slider images.
+2. Open the ```compare.html``` file and locate the div with id='sliderbox'. Change the src attributes for the 'img-right' and 'img-left' to the path of the default images you would like to have as the initial slider images. 
+For example, changing the initial values to ```edited.jpg``` and ```unedited.jpg``` would change the file to:
 
 ```html
   	<div id="sliderbox" class="img-container">
-  		<!-- Right Image -->
-  		<img class="fitcenter" id="img_right" src="images/imagery/B2017_5k.jpg">
-  		<!-- Left image -->
-  		<div class="imgholder img-top">
-  			<img class="fitcenter" id="img_left" src="images/imagery/B1995_5k.jpg">
-  		</div>
-  		<span class="handle"></span>
+      <!-- Right Image -->
+  	  <img class="fitcenter" id="img_right" src="images/imagery/edited.jpg">
+  	  <!-- Left image -->
+  	  <div class="imgholder img-top">
+  	    <img class="fitcenter" id="img_left" src="images/imagery/unedited.jpg">
+  	  </div>
+  	  <span class="handle"></span>
   	</div>
 ```
 
 3. All that is left at this point is to point the left and right buttons to your images. You do this by:
-    a. Open the compare.js file and locate the line with, ```var filenames```.
+
+    a. Open the ```compare.js``` file and locate the line with, ```var filenames```.
 
     b. Inside this filenames, you shall put all the images you want in the slider and their button names. For example, if you have 4 images edited.jpg, unedited.jpg, filtered.jpg and unfiltered. Your filename variable should be changed to:
     ```javascript
@@ -45,8 +47,8 @@ You can also create your own folder inside the images/ directory but remember to
         ]
     ```
 
-    Note: For each item in the filenames array, the first item is the name that will appear on the button, eg 'edited' and the second item is the path to the image, eg 'images/imagery/edited.jpg'.
+    Note: For each item in the filenames array, the first item is the name that will appear on the button, eg ```'edited'``` and the second item is the path to the image, eg ```'images/imagery/edited.jpg'```.
 
-4. Change the title of the slider in the compare.html, or remove it all together if not needed. 
+4. Change the title of the slider in the ```compare.html```, or remove it all together if not needed. 
 
 Once this is done, save your changes and you are good to go!
