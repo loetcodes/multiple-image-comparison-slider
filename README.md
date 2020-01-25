@@ -1,6 +1,8 @@
-# Multiple-image-comparison-slider
+# Multi-Image Comparison Slider
 
-Compare images with a multiple image slider. With this slider, you can compare multiple images all in one slider window. This is great slider that allows users to select multiple images for comparison by providing left and right image buttons.
+Compare images with a multiple image slider. 
+With this slider, you can compare multiple images all in one slider window. This is a slider that allows users to select and compare multiple images using side panel buttons.
+
 
 # Features include:
 
